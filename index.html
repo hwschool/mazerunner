@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/icon.png">
+    <title>Maze Generator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:500">
+    <link rel="stylesheet" href="stylesheets/base.css">
+    <link rel="stylesheet" href="stylesheets/animations.css">
+    <script src="scripts/main.js"></script>
+    <script src="scripts/maze.js"></script>
+    <script src="scripts/draw.js"></script>
+    <script src="scripts/drag.js"></script>
+    <script src="scripts/zoom.js"></script>
+  </head>
+  <body>
+    <div class="map">
+      <div class="canvas">
+        <canvas class="-movable -scalable"></canvas>
+      </div>
+    </div>
+    <div class="floating control panel">
+      <span><img src="images/logo.png" alt="Maze Generator logo"></span>
+      <div>
+        <input name="width" placeholder="width">
+        <input name="height" placeholder="height">
+      </div>
+      <div>
+        <button name="generate">GENERATE</button>
+        <button name="solve">SOLVE</button>
+      </div>
+    </div>
+    <div class="information panel">
+      <h1>Maze Generator</h1>
+      <h2>0.1.0</h2>
+    </div>
+    <div class="zooming panel">
+      <button class="floating" name="zoom-in">+</button>
+      <button class="floating" name="zoom-out">-</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+input, button {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+  button:not(.floating):not(._disabled):active {
+    color: #afafaf;
+    background-color: #af002d;
+  }
+  button.floating:not(._disabled):hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translate(0, -2.5px);
+    transform: translate(0, -2.5px);
+  }
+  button.floating:not(._disabled):active {
+    box-shadow: none;
+    -webkit-transform: translate(0, 2.5px);
+    transform: translate(0, 2.5px);
+  }
+
+.-movable._moving {
+  -webkit-transition: none;
+  transition: none;
+}
+.-scalable._scaling {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
