@@ -55,7 +55,7 @@ function _onready_initialize() {
 
 function initializeInputs() {
   var inputs = document.querySelectorAll("input");
-  inputs[0].autofocus = true;
+  //inputs[0].autofocus = true;
   for (var i = 0; i < inputs.length; i++) {
     validateInputValue(inputs[i]);
     inputs[i].addEventListener("input", _oninput_validate);
