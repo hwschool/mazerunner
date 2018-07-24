@@ -45,7 +45,7 @@ function initializeZooming(element, handle) {
 };
 
 function _onwheel_zoom(event) {
-  zoom(-Math.sign(event.deltaY));
+  //zoom(-Math.sign(event.deltaY));
 };
 
 function zoom(deltaZoomFactor) {
