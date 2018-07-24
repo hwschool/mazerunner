@@ -48,9 +48,12 @@ function Application() {
 document.addEventListener("DOMContentLoaded", _onready_initialize);
 
 function _onready_initialize() {
+  document.querySelector("input[name='width']").value = 10;
+  document.querySelector("input[name='height']").value = 10;
   initializeInputs();
   initializeButtons();
   _application.setState("ready");
+  document.querySelector("button[name='generate']").click();
 };
 
 function initializeInputs() {
